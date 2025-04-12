@@ -1,16 +1,17 @@
-<html>
-<head>
-    <title>Currency Converter</title>
-</head>
-<body>
-<h2><%= ansCUR %></h2>
-    <form action="/" method="post">
-	    <input type="text" name="fromCUR" /> <br /><br />
-		<input type="text" name="toCUR" /> <br /><br />
-		<input type="text" name=dd /> <br /><br />
-		<input type="submit" value="Convert" /> <br />
-		
-	</form>
-	
-</body>
-</html>
+ < html >
+ < head >
+ < title > Currency Converter <  / title >
+ < !--bootstrap cdn for styling-- >
+ < link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel = "stylesheet" integrity = "sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin = "anonymous" >
+     <  / head >
+     < body >
+     < !--displays output value-- >
+     < h2 class = "alert alert-info" > 1 <  %= fromCUR %  >  =  <  %= ansCUR %  >  <  %= toCUR %  >  <  / h2 >
+     < !--form to read the curreny pair for conversion-- >
+     < form class = "form-control" action = "/" method = "post" >
+     < input type = "text" name = "fromCUR" /  >  < br /  >  < br /  >
+     < input type = "text" name = "toCUR" /  >  < br /  >  < br /  >
+     < input type = "submit" value = "Convert" class = "btn btn-primary" /  >  < br /  >
+     <  / form >
+     <  / body >
+    <  / html >
